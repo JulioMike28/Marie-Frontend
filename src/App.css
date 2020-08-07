@@ -1,0 +1,15 @@
+.App{
+  background: linear-gradient(white,pink,white) !important;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header-actions{
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: purple;
+}
+
