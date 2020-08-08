@@ -41,7 +41,7 @@ const NavWrapper = styled.nav`
         font-size:1.0rem;
         text-transform: capitalize;
         transition:all 0.5s ease-in-out;
-        padding: 0.2rem 5rem;
+        padding: 0.2rem 0.5rem;
         cursor:pointer;
         background: transparent;
         margin-left: 30px;

@@ -6,6 +6,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .header-actions{
   margin-left: 100px;
   margin-top: 20px;
@@ -13,3 +14,7 @@
   color: purple;
 }
 
+.sidebar{
+  transform:translateX(100rem);
+  margin-left:  10px;
+}
