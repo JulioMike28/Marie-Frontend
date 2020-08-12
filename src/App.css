@@ -1,20 +1,52 @@
 .App{
   background: linear-gradient(white,pink,white) !important;
+  width: 100%;
 }
 .header{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
+.header-image{
+  margin-right: 300px;
+}
 .header-actions{
   margin-left: 100px;
+  margin-right: 50px;
   margin-top: 20px;
   font-size: 20px;
   color: purple;
+}
+.header-actions > span:hover { 
+    cursor: pointer;
 }
 
 .sidebar{
   transform:translateX(100rem);
   margin-left:  10px;
+}
+
+.searchbar{
+  margin-left: 100px;
+  border-radius:30px;
+}
+.search_input{
+  color:purple;
+  border: 0;
+  outline: 0;
+  background: white;
+  width: 0;
+  caret-color:purple;
+  width: 300px;
+  padding-right: 10px;
+  border-radius: 10px ;
+}
+.search_icon{
+  margin-left: 10px;
+}
+.search_icon:hover{
+
+  color: #e74c3c;
+  cursor: pointer;
 }

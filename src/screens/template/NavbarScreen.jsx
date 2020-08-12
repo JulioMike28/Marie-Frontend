@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {Link} from 'react-router-dom'
 
 export default (props) => (
     <NavWrapper className="navbar navbar-expand-lg navbar-dark px-sm-5 mr-auto ">
@@ -11,17 +11,26 @@ export default (props) => (
             <li className="nav-link">
                 
             </li>
-            <li className="nav-link">
+            <li>
+                <Link to="/" className="nav-link">
                     Ínicio
+                </Link>
             </li>
             <li className="nav-link">
-            Contato
+                    Contato
             </li>    
             <li className="nav-link">
-            Loja
+                    Loja
             </li>
             <li className="nav-link">
-            Pólitica de troca e devoluções
+                    Pólitica de troca e devoluções
+            </li>
+            <li>
+                <div className="searchbar">
+                    <input className="search_input" type="text" name="" placeholder="O que você deseja?"></input>
+                    <span className="search_icon"><i className="fas fa-search"></i></span>
+                    
+                </div>
             </li>
         </ul>
     
@@ -44,12 +53,11 @@ const NavWrapper = styled.nav`
         padding: 0.2rem 0.5rem;
         cursor:pointer;
         background: transparent;
-        margin-left: 30px;
+        margin-left: 50px;
         list-style-type:none;
         &:hover{
-            border-top: .05rem solid purple;
-            border-bottom: .05rem solid purple;
-            
+            background-color: white;
+            border-radius: 10px;
         }
     }
    

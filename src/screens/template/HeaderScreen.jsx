@@ -6,7 +6,7 @@ function HeaderScreen() {
     return(
         <div className="header">
             <div></div>
-            <div>
+            <div className="header-img">
                 <img src={logomarca} alt="store" className="navbar-brand" />
             </div>
             <div className="header-actions">
