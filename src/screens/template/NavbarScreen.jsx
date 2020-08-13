@@ -16,8 +16,10 @@ export default (props) => (
                     Ínicio
                 </Link>
             </li>
-            <li className="nav-link">
+            <li>
+                <Link to="/contato" className="nav-link">
                     Contato
+                </Link>
             </li>    
             <li className="nav-link">
                     Loja
@@ -29,7 +31,7 @@ export default (props) => (
                 <div className="searchbar">
                     <input className="search_input" type="text" name="" placeholder="O que você deseja?"></input>
                     <span className="search_icon"><i className="fas fa-search"></i></span>
-                    
+
                 </div>
             </li>
         </ul>

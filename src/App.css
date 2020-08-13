@@ -50,3 +50,21 @@
   color: #e74c3c;
   cursor: pointer;
 }
+
+.slide{
+  justify-content: center;
+}
+.slide-1{
+  margin-left: 200px;
+}
+.slide-2{
+  margin-left: 50px;
+  margin-top:60px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border: 1 solid pink;
+  border-radius: 10px;
+}

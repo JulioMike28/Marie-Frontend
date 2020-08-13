@@ -1,5 +1,5 @@
 import React from 'react'
-import {logofooter} from '../../imagens/logo-footer.png'
+import logofooter from '../../imagens/logo-footer.png'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -35,7 +35,7 @@ export default (props)=>(
             <div className="col-md-3">
             <br></br>
                 <h5> Contato </h5>
-                <p> <i className="fa fa-whatsapp"/> (84) 987447977</p>
+                <p> <i className="fa fa-whatsapp"/> (84) 981173755</p>
                 <p> <i className="fa fa-google"/> modamarie.08@gmail.com</p>
                 <p><a href="https://www.instagram.com/modamarie_/?hl=pt-br" ><i className="fa fa-instagram"></i> @modamarie_</a></p>
                 <p><a href="https://www.facebook.com/profile.php?id=100014645135601" ><i className="fa fa-facebook"></i> Marie Marie</a></p>

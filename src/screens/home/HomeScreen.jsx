@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-import InfoScreen from './info/InfoScreen.jsx'
+
+import InfoScreen from '../info/InfoScreen.jsx'
+import SliderScreen from './SliderScreen.jsx'
 
 export default class HomeScreen extends Component{
     render(){
         return(
             <div>
                 <InfoScreen/>
-                Home
+                <br></br>
+                <SliderScreen />
             </div>
         )
     }

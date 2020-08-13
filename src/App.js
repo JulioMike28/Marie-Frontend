@@ -6,8 +6,10 @@ import {Switch,Route, BrowserRouter} from 'react-router-dom';
 import HeaderScreen from './screens/template/HeaderScreen.jsx'
 import NavbarScreen from './screens/template/NavbarScreen.jsx'
 import FooterScreen from './screens/template/FooterScreen.jsx'
-import HomeScreen from './screens/HomeScreen.jsx'
+import HomeScreen from './screens/home/HomeScreen.jsx'
 import DefaultScreen from './screens/template/DefaultScreen.jsx'
+import MedidaScreen from './screens/info/MedidaScreen';
+import ContatoScreen from './screens/info/ContatoScreen';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
 
           <Switch>
             <Route path="/" exact={true} component={HomeScreen}/>
+            <Route path="/medida" component={MedidaScreen}/>
+            <Route path="/contato" component={ContatoScreen}/>
             <Route component={DefaultScreen} />
           </Switch>
           
