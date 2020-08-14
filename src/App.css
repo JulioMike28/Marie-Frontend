@@ -68,3 +68,70 @@ img{
   border: 1 solid pink;
   border-radius: 10px;
 }
+.filtro{
+  list-style-type: none;
+  margin: 0;
+}
+.filtro > li {
+  color: purple;
+  margin: 0;
+  align-items: center;
+}
+
+.roupas{
+  background: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.card{
+  border-color:transparent;
+}
+.card-footer{
+  background:transparent;
+  border-top:transparent;
+  transition:all 1s linear;
+}
+.card:hover{
+    border:0.04rem solid rgba(0,0,0,0.2);
+    box-shadow:2px 2px 5px 0px rgba(0,0,0,0.2)
+}
+.card-footer:hover{
+    background:rgba(247,247,247);
+}
+
+.img-container{
+  position:relative;
+  overflow: hidden;
+}
+.card-img-top{
+  transition:all 1s linear;
+  height:400px;
+}
+.img-container:hover .card-img-top{
+  transform:scale(1.2);
+}
+.cart-btn{
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding: 0.2rem 0.4rem;
+  background:pink;
+  border:1px solid pink;
+  color:purple;
+  font-size:1.2rem;
+  border-radius: 5px 0 0 0;
+  transform: translate(100%,100%);
+  transition:all 0.5s linear;
+}
+.img-container:hover .cart-btn{
+  transform: translate(0, 0);
+}
+.cart-btn:hover{
+  color: var(--mainRoxo);
+  cursor:pointer;
+}
+.icone:hover{
+  cursor: pointer;
+}

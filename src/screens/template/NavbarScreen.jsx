@@ -21,11 +21,15 @@ export default (props) => (
                     Contato
                 </Link>
             </li>    
-            <li className="nav-link">
+            <li>
+                <Link to="/loja" className="nav-link">
                     Loja
+                </Link>
             </li>
-            <li className="nav-link">
+            <li>
+                <Link to="/politica" className="nav-link">
                     Pólitica de troca e devoluções
+                </Link>
             </li>
             <li>
                 <div className="searchbar">

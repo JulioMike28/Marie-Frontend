@@ -8,8 +8,10 @@ import NavbarScreen from './screens/template/NavbarScreen.jsx'
 import FooterScreen from './screens/template/FooterScreen.jsx'
 import HomeScreen from './screens/home/HomeScreen.jsx'
 import DefaultScreen from './screens/template/DefaultScreen.jsx'
-import MedidaScreen from './screens/info/MedidaScreen';
-import ContatoScreen from './screens/info/ContatoScreen';
+import MedidaScreen from './screens/info/MedidaScreen.jsx'
+import ContatoScreen from './screens/info/ContatoScreen.jsx'
+import PoliticaScreen from './screens/politica/PoliticaScreen.jsx'
+import LojaScreen from './screens/loja/LojaScreen.jsx';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/" exact={true} component={HomeScreen}/>
             <Route path="/medida" component={MedidaScreen}/>
             <Route path="/contato" component={ContatoScreen}/>
+            <Route path="/politica" component={PoliticaScreen}/>
+            <Route path="/loja" component={LojaScreen}/>
             <Route component={DefaultScreen} />
           </Switch>
           

@@ -21,7 +21,7 @@ export default (props) => (
             </div>
             <div className="col-md-3">
                 <h4 style={{color:"purple"}}>Google maps</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.9317963621501!2d-36.59696017085309!3d-6.556083999703634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ae4abae67cdbe9%3A0xfb5f6aba4020d228!2sR.%20Cel.%20Quinco%2C%20122%20-%20Carnauba%20Dos%20Dantas%2C%20Carna%C3%BAba%20dos%20Dantas%20-%20RN%2C%2059374-000!5e0!3m2!1spt-BR!2sbr!4v1591034841680!5m2!1spt-BR!2sbr" title="playlist" style={{width:"600"},{height:"450"},{frameborder:"0"},{border:"0"},{allowfullscreen:""},{tabindex:"0"}}></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.9317963621501!2d-36.59696017085309!3d-6.556083999703634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ae4abae67cdbe9%3A0xfb5f6aba4020d228!2sR.%20Cel.%20Quinco%2C%20122%20-%20Carnauba%20Dos%20Dantas%2C%20Carna%C3%BAba%20dos%20Dantas%20-%20RN%2C%2059374-000!5e0!3m2!1spt-BR!2sbr!4v1591034841680!5m2!1spt-BR!2sbr" title="playlist" style={{width:"600",height:"450",frameborder:"0",border:"0",allowfullscreen:"",tabindex:"0"}}></iframe>
             </div>
         </div>
         <br></br>
