@@ -21,7 +21,7 @@ function RoupasScreen(props) {
             products.map(el=>
                 <div className="col-9 mx-auto col-lg-3 my-3">
                     <div className="card">
-                        <div className="img-container p-5">
+                        <div className="img-container">
                             <img src={el.image} alt="roupa" className="card-image-top"/> 
                             <button className="cart-btn btn"> Visualização Rápida</button>       
                         </div>
