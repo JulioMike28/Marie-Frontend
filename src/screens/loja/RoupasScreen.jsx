@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import api from '../../service/api.js'
+import { useSelector, useDispatch } from 'react-redux';
+import { listProducts } from '../../actions/productActions';
 
 function RoupasScreen(props) {
 
-    const [products, setProduct] = useState([]);
+    const productList = useSelector(state => state.productList);
+    const { products, loading, erro} = productList;
+    const dispatch = useDispatch();
 
     useEffect(()=>{
-        const fetchData = async () =>{
-            const {data} = await api.get("/api/products");
-            setProduct(data);
-        }
-        fetchData();
+        dispatch(listProducts());
         return()=>{
 
         };
