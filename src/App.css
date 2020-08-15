@@ -1,5 +1,5 @@
 .App{
-  background: linear-gradient(white,pink,white) !important;
+  background: linear-gradient(to right,pink,white, pink) !important;
   width: 100%;
 }
 .header{
@@ -53,7 +53,7 @@
 
 .slide{
   justify-content: center;
-  background-color: #ffe3d8;
+  background: linear-gradient(to right, lightcoral,white,lightcoral) !important;
 }
 .slide-1{
   margin-left: 100px;
@@ -182,12 +182,10 @@ img{
   width: 250px;
   height: 250px;
   opacity: 0.7;
-  background-color: #afeeee;
-  border: 1px solid #c8a2c8;
   border-radius:50%;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
-  box-shadow: 2px 6px  #c8a2c8;
+  
 }
 .btnSlider > .comprar{
   background-color: transparent;
@@ -206,19 +204,12 @@ img{
 }
 
 .apelido{
-  background-color: #deb887;
-  width: 100px;
+  width: 120px;
   height: 40px;
   margin-left: 100px;
   margin-bottom: 10px;
   font-family: "Cookie";
-  font-size: 20px;
   opacity:1;
-}
-.apelido > .texto{
-  position: absolute;
-  right: 90px;
-  top: 80px;
 }
 
 #fotos{
@@ -240,16 +231,18 @@ img{
   flex-direction:row;
   flex-wrap: nowrap;
   overflow-x: auto;
+  background: linear-gradient(to right, lightcoral,white,lightcoral) !important;
 }
 .title-novidade{
   position: absolute;
   top:0px;
   left: 0px;
-  background-color:#eadbea;
+  background-color:#afeeee;
   padding: 10px;
   border: 1px solid pink;
   border-radius: 10px;
   color: purple;
+  opacity: 0.8;
 }
 .promo{
   background: none;
@@ -258,6 +251,7 @@ img{
   flex-direction:row;
   flex-wrap: nowrap;
   overflow-x: auto;
+  background: linear-gradient(to right, lightcoral,white,lightcoral) !important;
 }
 .title-promo{
   position: absolute;
@@ -268,5 +262,6 @@ img{
   border: 1px solid pink;
   border-radius: 10px;
   color: white;
+  opacity: 0.8;
 }
 
