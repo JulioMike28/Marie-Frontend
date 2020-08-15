@@ -23,11 +23,11 @@ function RoupasScreen(props) {
                     <div className="card">
                         <div className="img-container p-5">
                             <img src={el.image} alt="roupa" className="card-image-top"/> 
-                            <button className="cart-btn"> Visualização Rápida</button>       
+                            <button className="cart-btn btn"> Visualização Rápida</button>       
                         </div>
                         <div className="card-footer d-flex justify-content-between">
                             <p className="align-self-center mb-0">
-                                {el.name}
+                                {el.category} - {el.name}
                             </p>
                             <h5 style={{color:"purple"}} className="font-italic mb-0">
                                 <span className="mr-1">
@@ -35,7 +35,9 @@ function RoupasScreen(props) {
                                 </span>
                                 {el.price}
                             </h5>
+                            
                         </div>
+                        <button className="btnCart btn">Adicionar ao Carrinho</button>
                     </div>
                 </div> 
             )

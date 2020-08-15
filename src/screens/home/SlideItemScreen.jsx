@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonSlider from './ButtonSlider'
 
 
 export default (props) => (
@@ -6,13 +7,16 @@ export default (props) => (
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                   <img className="d-block w-100" src={props.image1} alt="First slide" />
+                    <img className="d-block w-100" src={props.image1} alt="First slide" />
+                    <ButtonSlider/>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={props.image2} alt="Second slide" />
+                    <ButtonSlider/>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={props.image3} alt="Third slide"/>
+                    <ButtonSlider/>
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

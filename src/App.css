@@ -53,15 +53,23 @@
 
 .slide{
   justify-content: center;
+  background-color: #ffe3d8;
 }
 .slide-1{
-  margin-left: 200px;
+  margin-left: 100px;
+  padding: 10px;
+  z-index: 2;
 }
 .slide-2{
-  margin-left: 50px;
-  margin-top:60px;
+  margin-left: 30px;
+  margin-top:40px;
+  padding: 10px;
+  z-index: 2;
 }
-
+.fundoslide{
+  z-index: 1;
+  background-color: #deb887;
+}
 img{
   max-width: 100%;
   height: auto;
@@ -117,8 +125,8 @@ img{
   bottom:0;
   right:0;
   padding: 0.2rem 0.4rem;
-  background:pink;
-  border:1px solid pink;
+  background:#c8a2c8;
+  border:1px solid #c8a2c8;
   color:purple;
   font-size:1.2rem;
   border-radius: 5px 0 0 0;
@@ -129,9 +137,107 @@ img{
   transform: translate(0, 0);
 }
 .cart-btn:hover{
-  color: var(--mainRoxo);
+  color:pink;
   cursor:pointer;
 }
 .icone:hover{
   cursor: pointer;
 }
+.tamanho{
+  list-style-type: none;
+}
+.preco{
+  margin-top: 10px;
+}
+.btnCart{
+  background: #c8a2c8;
+  color: purple;
+  border: 1px solid pink;  
+}
+.btnCart:hover{
+  color:pink;  
+}
+.cor{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cor > div{
+  margin: 5px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+.cor > div:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #888888;
+}
+.btnSlider{
+  position: absolute;
+  right:10px;
+  bottom: 20px;
+  width: 250px;
+  height: 250px;
+  opacity: 0.7;
+  background-color: #afeeee;
+  border: 1px solid #c8a2c8;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 2px 6px  #c8a2c8;
+}
+.btnSlider > .comprar{
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: .8;
+  margin-bottom: -50px;
+  color: black;
+}
+.btnSlider > .comprar:hover{
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: 1;
+  color: white;
+}
+
+.apelido{
+  background-color: #deb887;
+  width: 100px;
+  height: 40px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-family: "Cookie";
+  font-size: 20px;
+  opacity:1;
+}
+.apelido > .texto{
+  position: absolute;
+  right: 90px;
+  top: 80px;
+}
+
+#fotos{
+  margin-top:30px;
+  width:650px;
+  overflow-x: hidden;
+  height:110px;
+  border:1px solid #CCC;
+  white-space: nowrap;
+}
+#fotos ul li{
+
+  margin-right:4px;
+  cursor: pointer;
+  width:100px;
+  height:100px;
+  background:#CCC;
+  border:1px solid #555;
+  display: inline-block;
+}
+
