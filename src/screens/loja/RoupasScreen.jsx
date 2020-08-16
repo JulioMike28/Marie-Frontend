@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-import { listProducts } from '../../actions/productActions';
+import api from '../../service/api.js'
+import {Link} from 'react-router-dom'
 
 function RoupasScreen(props) {
 
-    const productList = useSelector(state => state.productList);
-    const { products, loading, erro} = productList;
-    const dispatch = useDispatch();
+    const [products, setProduct] = useState([]);
 
     useEffect(()=>{
-        dispatch(listProducts());
+        const fetchData = async () =>{
+            const {data} = await api.get("/api/products");
+            setProduct(data);
+        }
+        fetchData();
         return()=>{
 
         };
@@ -22,7 +24,9 @@ function RoupasScreen(props) {
                     <div className="card">
                         <div className="img-container">
                             <img src={el.image} alt="roupa" className="card-image-top"/> 
-                            <button className="cart-btn btn"> Visualização Rápida</button>       
+                            <Link to={'/product/'+el._id}>
+                                <button className="cart-btn btn"> Detalhes </button>  
+                            </Link> 
                         </div>
                         <div className="card-footer d-flex justify-content-between">
                             <p className="align-self-center mb-0">

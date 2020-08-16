@@ -22,7 +22,6 @@ function FiltroScreen (props){
         <h5 style={{color:"purple",marginBottom:"10px",marginLeft:"10px"}}>Filtrar por:</h5>
         <ul className="filtro">
             <hr></hr>
-            <li>
                 Tipo de Roupa <i style={{float:"right"}} className="fas fa-plus icone" data-toggle="collapse" data-target="#tipo"></i>
                 <div id="tipo" className="collapse">
                     <br></br>
@@ -35,7 +34,6 @@ function FiltroScreen (props){
                         )
                     }
                 </div>
-            </li>
             <hr></hr>
             <li>
                 Preço <i style={{float:"right"}} className="fas fa-plus icone" data-toggle="collapse" data-target="#preco"></i>

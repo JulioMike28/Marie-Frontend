@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import icon from '../../imagens/favicon.ico'
 import api from '../../service/api.js'
+import {Link} from 'react-router-dom'
 
 function PromoScreen (props){
     
@@ -50,7 +51,9 @@ function PromoScreen (props){
                                             <strike style={{color:"#f08080"}}>{el.price}</strike> - R${el.price - ((el.price*el.desconto)/100)}
                                         </h5>
                                     </div>
-                                    <button className="btnCart btn">Detalhes</button>
+                                    <Link to={'/product/'+el._id}>
+                                        <button className="btnCart btn">Detalhes</button>
+                                    </Link>
                                 </div>
                                 
                             </li>

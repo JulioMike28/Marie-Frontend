@@ -12,6 +12,7 @@ import MedidaScreen from './screens/info/MedidaScreen.jsx'
 import ContatoScreen from './screens/info/ContatoScreen.jsx'
 import PoliticaScreen from './screens/politica/PoliticaScreen.jsx'
 import LojaScreen from './screens/loja/LojaScreen.jsx';
+import DetailsScreen from './screens/details/DetailsScreen.jsx';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/contato" component={ContatoScreen}/>
             <Route path="/politica" component={PoliticaScreen}/>
             <Route path="/loja" component={LojaScreen}/>
+            <Route path="/product/:id" component={DetailsScreen} />
             <Route component={DefaultScreen} />
           </Switch>
           

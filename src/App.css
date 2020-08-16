@@ -151,7 +151,8 @@ img{
 .btnCart{
   background: #eadbea;
   color: purple;
-  border: 1px solid pink;  
+  border: 1px solid pink;
+  width: 100%;  
 }
 .btnCart:hover{
   color:pink;  
@@ -264,4 +265,20 @@ img{
   color: white;
   opacity: 0.8;
 }
-
+.details{
+  background: white;
+}
+.details > ul{
+  list-style-type: none;
+}
+.details > ul li{
+  color: purple;
+  font-size: 20px;
+  padding: 15px;
+}
+.details > button{
+  width: 100%;
+  background: lightcoral;
+  font-size: 20px;
+  color:white !important;
+}

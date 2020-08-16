@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import icon from '../../imagens/favicon.ico'
 import api from '../../service/api.js'
+import {Link} from 'react-router-dom'
 
 function NovidadeScreen (props){
     
@@ -49,7 +50,10 @@ function NovidadeScreen (props){
                                             {el.price}
                                         </h5>
                                     </div>
-                                    <button className="btnCart btn">Detalhes</button>
+                                    <Link to={'/product/'+el._id}>
+                                        <button className="btnCart btn">Detalhes</button>
+                                    </Link>
+                                    
                                 </div>
                                 
                             </li>
