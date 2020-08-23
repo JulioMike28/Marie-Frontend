@@ -13,6 +13,9 @@ import ContatoScreen from './screens/info/ContatoScreen.jsx'
 import PoliticaScreen from './screens/politica/PoliticaScreen.jsx'
 import LojaScreen from './screens/loja/LojaScreen.jsx';
 import DetailsScreen from './screens/details/DetailsScreen.jsx';
+import CartScreen from './screens/cart/CartScreen';
+import LoginScreen from './screens/users/LoginScreen';
+import RegisterScreen from './screens/users/RegisterScreen';
 
 function App() {
   return (
@@ -27,7 +30,10 @@ function App() {
             <Route path="/contato" component={ContatoScreen}/>
             <Route path="/politica" component={PoliticaScreen}/>
             <Route path="/loja" component={LojaScreen}/>
+            <Route path="/signin" component={LoginScreen}/>
+            <Route path="/register" component={RegisterScreen}/>
             <Route path="/product/:id" component={DetailsScreen} />
+            <Route path="/cart/:id?" component={CartScreen} />
             <Route component={DefaultScreen} />
           </Switch>
           

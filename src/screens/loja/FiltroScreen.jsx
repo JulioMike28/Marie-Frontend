@@ -19,7 +19,7 @@ function FiltroScreen (props){
 
     return <React.Fragment>
         
-        <h5 style={{color:"purple",marginBottom:"10px",marginLeft:"10px"}}>Filtrar por:</h5>
+        <h5 style={{color:"purple",marginBottom:"10px",marginLeft:"20px"}}> Filtrar por:</h5>
         <ul className="filtro">
             <hr></hr>
                 Tipo de Roupa <i style={{float:"right"}} className="fas fa-plus icone" data-toggle="collapse" data-target="#tipo"></i>

@@ -1,4 +1,4 @@
-import axios from 'axios'
+import api from '../service/api.js'
 import Cookie from 'js-cookie'
 import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants';
 
@@ -6,7 +6,7 @@ const addToCart = (productId, qty) => async (dispatch, getState) =>{
     try{
         console.log(productId)
         console.log(qty)
-        const data = await axios.get("/api/products/"+productId);
+        const data = await api.get("/api/products/"+productId);
         console.log(data.data.name)
         dispatch({
             type:CART_ADD_ITEM, 

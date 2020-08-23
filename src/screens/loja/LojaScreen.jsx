@@ -7,7 +7,7 @@ export default (props) =>(
     <React.Fragment>
         <br></br>
             <center><h4 style={{color:"purple"}}>Loja <img src={icon} alt="icon" /></h4></center>
-        <br></br>
+        
         <div className="row">
             <div className="col-md-2 filtro">
                 <FiltroScreen/>
