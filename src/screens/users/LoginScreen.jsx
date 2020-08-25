@@ -11,9 +11,10 @@ function LoginScreen (props){
     const userSignin = useSelector(state => state.userSignin);
     const {loading, userInfo, error} = userSignin
     const dispatch = useDispatch();
+    const redirect = props.location.search?props.location.search.split("=")[1]:'/';
     useEffect(()=>{
         if(userInfo){
-            history.push("/");
+            history.push(redirect);
         }
         return()=>{
             
@@ -24,7 +25,7 @@ function LoginScreen (props){
         dispatch(signin(email,password));
     } 
 
-    return <div class="content">      
+    return <div className="content">      
         <div id="login">
             <form onSubmit={submitHandler}> 
                 <h1>Login <img src={icon} alt="icon"></img></h1>
@@ -40,10 +41,10 @@ function LoginScreen (props){
                     <input id="senha_login" required="required" type="password" placeholder="ex. senha" name="password" className="login-input" onChange={(e)=> setPassword(e.target.value)}/> 
                 </p>
                 <p>
-                    Não possuir conta? <Link to="/register" style={{color:"purple"}}> Registre-se </Link>
+                    Não possuir conta? <Link to={redirect === "/" ? "register" : "register?redirect=" + redirect} style={{color:"purple"}}> Registre-se </Link>
                 </p>
                 <p> 
-                    <input type="submit" value="Entrar" /> 
+                    <button type="submit" className="btnSalvar">Entrar</button> 
                 </p>
             </form>
         </div>

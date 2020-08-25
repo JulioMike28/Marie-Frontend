@@ -10,7 +10,7 @@ export default (props) =>(
                     <p style={{fontFamily:"Cookie", fontSize:`${props.font}`}}>{props.apelido}</p>
                 </div>     
             </div>
-            <button className="comprar btn">COMPRAR</button>
+            <button type="button" className="comprar btn">COMPRAR</button>
         </button>
     </React.Fragment>
 )

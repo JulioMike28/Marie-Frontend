@@ -4,14 +4,15 @@ import {useDispatch, useSelector} from 'react-redux'
 import { removeFromCart } from '../../actions/cartActions';
 import {Link} from 'react-router-dom'
 
-function HeaderScreen() {
+function HeaderScreen(props) {
     const cart = useSelector(state=>state.cart);
     const {cartItems} = cart;
 
     const userSignin = useSelector(state=>state.userSignin);
     const { userInfo } = userSignin;
 
-    let cont=0; 
+    let cont=0;
+
     const dispatch = useDispatch();
 
     //sidebar functions
@@ -34,7 +35,7 @@ function HeaderScreen() {
             <div className="header-actions">
                 <span className="">
                     <i className="fa fa-user fa-1x"></i>
-                    
+                    {console.log(userInfo)}
                     {
                        userInfo ? <Link to="/profile" style={{color:"purple"}}> {userInfo.name} </Link> :
                         <Link to="/signin" style={{color:"purple"}}>Login</Link>

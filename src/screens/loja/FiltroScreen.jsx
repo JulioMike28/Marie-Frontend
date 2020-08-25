@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import api from '../../service/api.js'
-import Nouislider from "nouislider-react";
-import "nouislider/distribute/nouislider.css";
+
 
 function FiltroScreen (props){
     const [products, setProduct] = useState([]);
@@ -39,7 +38,7 @@ function FiltroScreen (props){
                 Preço <i style={{float:"right"}} className="fas fa-plus icone" data-toggle="collapse" data-target="#preco"></i>
                 <div id="preco" className="collapse preco">
                     
-                    <Nouislider range={{ min: 0, max: 100 }} start={[20, 80]} connect />
+                  
                 </div>
             </li>
             <hr></hr>

@@ -23,6 +23,7 @@ function RoupasScreen(props) {
                 <div className="col-9 mx-auto col-lg-3 my-3">
                     <div className="card">
                         <div className="img-container">
+                            {console.log(el.image)}
                             <img src={el.image} alt="roupa" className="card-image-top"/> 
                             <Link to={'/product/'+el._id}>
                                 <button className="cart-btn btn"> Detalhes </button>  

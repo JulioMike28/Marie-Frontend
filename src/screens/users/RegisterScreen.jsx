@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import icon from '../../imagens/favicon.ico'
 import { useSelector, useDispatch } from 'react-redux'
 import { register } from '../../actions/userActions';
-import { useHistory, Link } from 'react-router-dom'
+import { useHistory, Link, Redirect } from 'react-router-dom'
 
 function RegisterScreen (props){
     const history = useHistory();
@@ -15,9 +15,10 @@ function RegisterScreen (props){
     const userRegister = useSelector(state => state.userSignin);
     const {loading, userInfo, error} = userRegister
     const dispatch = useDispatch();
+    const redirect = props.location.search?props.location.search.split("=")[1]:'/';
     useEffect(()=>{
         if(userInfo){
-            history.push("/");
+            history.push(redirect);
         }
         return()=>{
             
@@ -28,7 +29,7 @@ function RegisterScreen (props){
         dispatch(register(name,email,phone,end,cep,password));
     } 
 
-    return <div class="content">      
+    return <div className="content">      
         <div id="login">
             <form onSubmit={submitHandler}> 
                 <h1>Registro <img src={icon} alt="icon"></img></h1>
@@ -59,7 +60,7 @@ function RegisterScreen (props){
                     <input id="senha_login" required="required" type="password" placeholder="ex. senha" name="password" className="login-input" onChange={(e)=> setPassword(e.target.value)}/> 
                 </p>
                 <p>
-                    Já possuir uma conta? <Link to="/signin" style={{color:"purple"}}> Login</Link>
+                    Já possuir uma conta? <Link to={redirect === "/" ? "signin" : "register?redirect=" + redirect} style={{color:"purple"}}> Login</Link>
                 </p>
                 <p> 
                     <input type="submit" value="Salvar" /> 

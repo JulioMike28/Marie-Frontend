@@ -1,13 +1,12 @@
 import api from '../service/api.js'
 import Cookie from 'js-cookie'
-import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants';
+import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_SHIPPING, CART_SAVE_PAYMENT } from '../constants/cartConstants';
 
 const addToCart = (productId, qty) => async (dispatch, getState) =>{
     try{
         console.log(productId)
         console.log(qty)
         const data = await api.get("/api/products/"+productId);
-        console.log(data.data.name)
         dispatch({
             type:CART_ADD_ITEM, 
             payload:{
@@ -34,5 +33,11 @@ const removeFromCart = (productId) => async (dispatch, getState) =>{
     Cookie.set("cartItems",JSON.stringify(cartItems))
 
 }
+const saveShipping = (data) => (dispatch) => {
+    dispatch({type: CART_SAVE_SHIPPING, payload:data})
+}
+const savePayment = (data) => (dispatch) => {
+    dispatch({type: CART_SAVE_PAYMENT, payload:data})
+}
 
-export { addToCart, removeFromCart }
+export { addToCart, removeFromCart, saveShipping, savePayment}

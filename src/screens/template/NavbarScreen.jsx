@@ -27,7 +27,7 @@ export default (props) => (
                 </Link>
             </li>
             <li>
-                <Link to="/politica" className="nav-link">
+                <Link to="/productCreate" className="nav-link">
                     Pólitica de troca e devoluções
                 </Link>
             </li>
